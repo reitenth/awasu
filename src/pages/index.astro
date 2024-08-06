@@ -1,0 +1,51 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Poster from "../components/Poster.astro";
+import Banner from "../components/Banner.astro";
+import Description from "../components/Description.astro";
+import Related from "../components/Related.astro";
+import Info from "../components/Info.astro";
+---
+
+<div class="page-container">
+  <div class="right-container">
+    <Banner />
+    <div class="poster-container">
+      <Poster />
+      <div class="description-container">
+        <Description />
+      </div>
+    </div>
+    <div class="info-container">
+      <Info />
+      <Related />
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    background-color: #434c5e;
+  }
+  .page-container {
+    display: flex;
+    gap: 10px;
+  }
+  .right-container {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+  .poster-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+  }
+  .info-container {
+    display: flex;
+    gap: 10px;
+  }
+</style>
